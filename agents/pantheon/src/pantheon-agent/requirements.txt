@@ -1,0 +1,7 @@
+requests==2.34.2
+mcp==2.0.0
+openai==2.53.0
+pwntools==4.15.0
+scapy==2.5.0
+pyjwt>=2.10.1
+cryptography==42.0.5

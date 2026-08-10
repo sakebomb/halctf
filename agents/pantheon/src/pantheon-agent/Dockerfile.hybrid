@@ -1,0 +1,19 @@
+# Hybrid agent: Deterministic + LLM fallback
+# Single-stage build - all deps have wheels
+FROM python:3.11-slim-bookworm
+
+# Install dependencies
+COPY requirements-hybrid.txt .
+RUN pip install --no-cache-dir -r requirements-hybrid.txt
+
+# Copy agent code
+COPY main.py ./agent/main.py
+COPY mcp_client.py ./agent/mcp_client.py
+COPY llm_helper.py ./agent/llm_helper.py
+COPY solvers ./agent/solvers
+RUN chmod +x ./agent/main.py
+
+ENV PYTHONPATH=/agent
+
+# Unbuffered output is CRITICAL
+ENTRYPOINT ["python", "-u", "/agent/main.py"]

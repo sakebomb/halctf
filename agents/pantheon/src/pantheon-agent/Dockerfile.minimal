@@ -1,0 +1,18 @@
+# Minimal single-stage build - all deps have wheels
+FROM python:3.11-slim-bookworm
+
+# Install dependencies (all have prebuilt wheels, no compilation needed)
+COPY requirements-minimal.txt .
+RUN pip install --no-cache-dir -r requirements-minimal.txt
+
+# Copy agent code
+COPY main.py ./agent/main.py
+COPY mcp_client.py ./agent/mcp_client.py
+COPY flag_utils.py ./agent/flag_utils.py
+COPY solvers ./agent/solvers
+RUN chmod +x ./agent/main.py
+
+ENV PYTHONPATH=/agent
+
+# Unbuffered output is CRITICAL — the platform reads your stdout as a heartbeat.
+ENTRYPOINT ["python", "-u", "/agent/main.py"]

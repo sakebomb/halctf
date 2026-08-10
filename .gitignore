@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Docker
+*.tar
+*.tar.gz
+agents/*/builds/*.tar
+agents/*/builds/*.tar.gz
+
+# Logs
+logs/**/*.txt
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.orig
+
+# Secrets (just in case)
+*.env
+.env.local
+secrets/
+credentials/
+
+# MCP cache
+.playwright-mcp/
+
+# Keep structure but ignore content in certain dirs
+agents/*/builds/*
+!agents/*/builds/VERSIONS.md
+!agents/*/builds/README.md
+
+# Keep logs structure but ignore log files
+logs/**/*
+!logs/**/README.md
+!logs/**/.gitkeep
+
+# Archive (optional - you might want to commit some of this)
+archive/html-scrapes/*
+archive/legacy-agents/*
+archive/legacy-scripts/*
+
+# Documentation - KEEP EVERYTHING IN docs/
+!docs/**/*
+
+# Development artifacts
+.claude/
+tasks/
+REORGANIZE.sh
+REORGANIZATION_*.md
+create_readmes.sh

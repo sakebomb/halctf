@@ -1,0 +1,8 @@
+# Pinned to a known-good set (python:3.11-slim-bookworm) so pip resolves fast and
+# deterministically. All ship prebuilt manylinux wheels -> no compiler needed.
+requests==2.34.2
+mcp==2.0.0
+openai==2.53.0
+# Add per-CTF as needed (all have wheels): pycryptodome, cryptography, pynacl.
+# If you add a package with NO wheel (e.g. pycosat), switch to the multi-stage
+# Dockerfile (see Dockerfile.multistage note) so gcc stays out of the final image.

@@ -1,0 +1,10 @@
+# Pinned to a known-good resolution (captured 2026-08-08). Pinning the top-level
+# packages keeps the image build deterministic and fast.
+#
+# NOTE: we deliberately do NOT use pwntools — it drags in capstone (43M) +
+# unicorn (56M) that the Achilles solver never touches. pyelftools (1.8M) reads
+# the ELF symbol table and a hand-rolled De Bruijn cyclic finds the RIP offset.
+requests==2.34.2
+mcp==2.0.0
+openai==2.53.0
+pyelftools==0.31
