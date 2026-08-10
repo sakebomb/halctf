@@ -258,7 +258,7 @@ No nonce reuse detected - cannot recover private key
 ## Files Checklist
 
 ```bash
-# In /home/sakebomb/code/conferences/defcon/halctf/
+# In the repository root
 
 ✅ diagnostic-agent.tar.gz (51MB) - Ready to upload
 ✅ bills-pc-agent-v4-fixed.tar.gz (138MB) - Ready to upload

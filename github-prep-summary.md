@@ -104,7 +104,7 @@ The following are excluded via `.gitignore` (appropriate for binary/log/dev file
 ### 1. Initialize Git Repository
 
 ```bash
-cd /home/sakebomb/code/conferences/defcon/halctf
+cd halctf
 git init
 git add .
 git commit -m "Initial commit: HalCTF autonomous agents - DEF CON 34 (13th place)"

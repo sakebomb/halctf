@@ -92,7 +92,7 @@ def submit_flag(flag: str, challenge_id: str) -> bool:
 ## Build Commands
 
 ```bash
-cd /home/sakebomb/code/conferences/defcon/halctf/bills-pc-agent-v3
+cd bills-pc-agent-v3
 docker build -t bills-pc-agent-v3:latest .
 docker save bills-pc-agent-v3:latest > ../bills-pc-agent-v3.tar
 ```
