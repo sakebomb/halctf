@@ -10,7 +10,7 @@
 ### Upload & Run
 ```bash
 # File location
-/home/sakebomb/code/conferences/defcon/halctf/pantheon-agent-v2.tar
+pantheon-agent-v2.tar
 
 # Upload to: halctf.aivillage.org
 # Size: 160 MB

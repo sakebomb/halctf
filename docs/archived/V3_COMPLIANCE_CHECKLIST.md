@@ -190,7 +190,7 @@ Flag submission: 200 - {"success": true}
 
 ## Upload Status
 
-- **File:** `/home/sakebomb/code/conferences/defcon/halctf/bills-pc-agent-v3.tar`
+- **File:** `bills-pc-agent-v3.tar`
 - **Size:** 195 MB
 - **SHA256:** `cc4d99a83b5c...`
 - **Status:** ✅ READY TO UPLOAD

@@ -9,7 +9,7 @@
 
 ### Multi-Challenge Agent v4 with Smart Brute-Force
 - **File**: `bills-pc-agent-v4-bruteforce.tar` (400MB, uncompressed)
-- **Location**: `/home/sakebomb/code/conferences/defcon/halctf/`
+- **Location**: repository root
 - **Capabilities**: Solves 4 challenges (Bill's PC, Cerulean Cave, Silph Co., The Indigo League)
 
 ---
@@ -47,7 +47,7 @@ def submit_flag_brute(self, flag: str) -> bool:
 
 ```
 ✅ bills-pc-agent-v4-bruteforce.tar (400MB)
-   └─ Location: /home/sakebomb/code/conferences/defcon/halctf/
+   └─ Location: repository root
    └─ Format: Uncompressed .tar (required by HALCTF)
    └─ Docker image: bills-pc-agent:v4-bruteforce (410MB)
 ```
@@ -111,7 +111,7 @@ Added critical detail:
 
 ## Documentation Files
 
-All documentation is in `/home/sakebomb/code/conferences/defcon/halctf/`:
+All documentation is in the repository root:
 
 - `SESSION_SUMMARY.md` - This file
 - `UPLOAD_NOW.md` - Detailed upload instructions

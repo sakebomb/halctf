@@ -136,7 +136,7 @@ Same image works for all 4 challenges!
 
 ```bash
 # Ready to upload:
-/home/sakebomb/code/conferences/defcon/halctf/bills-pc-agent-v4-bruteforce.tar.gz
+bills-pc-agent-v4-bruteforce.tar.gz
 
 # Archive size: 138MB
 # Docker image: bills-pc-agent:v4-bruteforce (410MB)

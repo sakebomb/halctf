@@ -51,7 +51,7 @@ def check_run_status(session, run_id, version):
                     print(f"🚩 Flags found: {flags}")
 
             # Save full response for manual inspection
-            output_file = f"/home/sakebomb/code/conferences/defcon/halctf/run_{version}_status.html"
+            output_file = f"run_{version}_status.html"
             with open(output_file, 'w') as f:
                 f.write(html)
             print(f"Full response saved to: {output_file}")
@@ -67,7 +67,7 @@ def main():
     print(f"HALCTF Run Monitor - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
     # Check if we have a session cookie file
-    cookie_file = "/home/sakebomb/code/conferences/defcon/halctf/.halctf_cookies.json"
+    cookie_file = ".halctf_cookies.json"
 
     session = requests.Session()
 

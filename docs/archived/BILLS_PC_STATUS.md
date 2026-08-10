@@ -17,7 +17,7 @@
 - File: `bills-pc-agent-v3.tar` (195 MB Docker image)
 - SHA256: `cc4d99a83b5c...`
 - Change: Added `challenge_id` parameter to flag submission
-- Location: `/home/sakebomb/code/conferences/defcon/halctf/bills-pc-agent-v3.tar`
+- Location: `bills-pc-agent-v3.tar`
 - Verified: Contains manifest.json ✓
 
 ## Next Steps
@@ -75,9 +75,9 @@ def submit_flag(flag: str, challenge_id: str) -> bool:
 
 ## Files
 
-- `/home/sakebomb/code/conferences/defcon/halctf/bills-pc-agent-v3.tar` - **Ready to upload**
-- `/home/sakebomb/code/conferences/defcon/halctf/BILLS_PC_V3_CHANGES.md` - Detailed changes
-- `/home/sakebomb/code/conferences/defcon/halctf/run_996b75d539b0b91a_logs.txt` - v2 logs
+- `bills-pc-agent-v3.tar` - **Ready to upload**
+- `BILLS_PC_V3_CHANGES.md` - Detailed changes
+- `run_996b75d539b0b91a_logs.txt` - v2 logs
 
 ---
 
